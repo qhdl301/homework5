@@ -23,7 +23,7 @@ public class GuGuDan2 {
 		return 0;
 	}
 	void print() {
-		int startIndex;
+		int startIndex = 0;
 		if(oddOrEven.equals("E"))
 			startIndex = 2;
 		else if(oddOrEven.equals("O"))
