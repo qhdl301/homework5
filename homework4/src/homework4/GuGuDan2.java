@@ -23,19 +23,15 @@ public class GuGuDan2 {
 		return 0;
 	}
 	void print() {
-		if(oddOrEven.equals("E")) {
-			for(int i=1;i<10;i++) {
-				for(int j=2;j<10;j+=2)
-					System.out.format(" %d * %d  = %2d ", j, i, j*i);
-				System.out.print("\n");
-			}
-		}
-		else if(oddOrEven.equals("O")) {
-			for(int i=1;i<10;i++) {
-				for(int j=3;j<10;j+=2)
-					System.out.format(" %d * %d  = %2d ", j, i, j*i);
-				System.out.print("\n");
-			}
+		int startIndex;
+		if(oddOrEven.equals("E"))
+			startIndex = 2;
+		else if(oddOrEven.equals("O"))
+			startIndex = 3;
+		for(int i=1;i<10;i++) {
+			for(int j=startIndex;j<10;j+=2)
+				System.out.format(" %d * %d  = %2d ", j, i, j*i);
+			System.out.print("\n");
 		}
 	}
 }
