@@ -6,7 +6,7 @@ public class ExamForWhile {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int selectedModule;
-		
+				
 		do {
 			System.out.println("1. 1부터 입력한 수까지 더하기");
 			System.out.println("2. 최대값/최소값구하기");
